@@ -5,9 +5,9 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>ru.student</groupId>
-    <artifactId>mission-dashboard-lab2-minimal</artifactId>
+    <artifactId>mission-dashboard-lab2-compact</artifactId>
     <version>1.0-SNAPSHOT</version>
-    <name>mission-dashboard-lab2-minimal</name>
+    <name>mission-dashboard-lab2-compact</name>
 
     <properties>
         <maven.compiler.source>17</maven.compiler.source>
@@ -19,13 +19,7 @@
         <dependency>
             <groupId>com.fasterxml.jackson.core</groupId>
             <artifactId>jackson-databind</artifactId>
-            <version>2.15.2</version>
-        </dependency>
-
-        <dependency>
-            <groupId>com.fasterxml.jackson.dataformat</groupId>
-            <artifactId>jackson-dataformat-xml</artifactId>
-            <version>2.15.2</version>
+            <version>2.17.1</version>
         </dependency>
     </dependencies>
 
@@ -41,11 +35,10 @@
                     <encoding>UTF-8</encoding>
                 </configuration>
             </plugin>
-
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-shade-plugin</artifactId>
-                <version>3.5.1</version>
+                <version>3.5.2</version>
                 <executions>
                     <execution>
                         <phase>package</phase>
